@@ -29,7 +29,7 @@
       <p class="text-center"><img src="assets/qr.png"></p>
       <p class="text-center">请使用谷歌身份验证器扫描以上二维码</p>
     </div>
-    <div class="mb-3"><input value="otpauth://totp/Passkou?secret=JVIJOPGAHW3367XA&issuer=Test" readonly class="form-control text-center"></div>
+    <div class="mb-3"><input value="otpauth://totp/Passkou?secret=sdada&issuer=Test" readonly class="form-control text-center"></div>
     <div class="text-center mb-4" id="code-box">
       <span class="code">-</span>
       <span class="code">-</span>
@@ -76,7 +76,7 @@
     function updateCode() {
       const T = Math.floor(Date.now() / 1000 / 30)
       // 用户密钥
-      const K = arrayToBinary(Array.from(new Uint8Array(base32Decode('JVIJOPGAHW3367XA'.toUpperCase(), 'RFC4648'))))
+      const K = arrayToBinary(Array.from(new Uint8Array(base32Decode('sadasd'.toUpperCase(), 'RFC4648'))))
 
       /**
       * 数字转 Int64 字节流
